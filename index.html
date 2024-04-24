@@ -10,7 +10,7 @@
     <main id="main">    
             <form action="" id="form">
                 <h1>Inscreva-se</h1>
-                <div id="camposDaInscricao">
+                <div id="divInscricao">
                     <label for="">
                         <input type="text" placeholder="Nome Completo" class="campoInscricao">
                     </label>
@@ -29,17 +29,24 @@
                     <label for="">
                         <input type="text" placeholder="Cidade" class="campoInscricao">
                     </label>
-                    <label for="">
-                        <input type="file" placeholder="campo de arquvio de identidade" class="campoInscricao">
-                    </label>
-                    <label for="">
-                        <input type="file" placeholder="campo de arquivo de comprovante de residencia" class="campoInscricao">
-                    </label>       
-                    
+                    <div id="caixaMaior">
+                        <div>
+                            <label for="">
+                                <input type="file" placeholder="campo de arquvio de identidade" class="campoDeArquivo">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="">
+                                <input type="file" placeholder="campo de arquivo de comprovante de residencia" class="campoDeArquivo">
+                            </label>                         
+                        </div>
+                        <p>*Atenção:todos os dados acima são obrigatórios</p>   
+                    </div>      
                 </div>
+                <button id="butaopSalvar">Entrar</button>
+                <button id="butaoCancelar">Sair</button>
             </form>
-            <button>Entrar</button>
-            <button>Sair</button>
+           
     </main>
 </body>
 </html>
