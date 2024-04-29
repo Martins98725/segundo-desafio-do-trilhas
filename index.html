@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="intex.css">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <main id="main">    
-            <form action="" id="form">
+    <main>
+        <section id="section-form">
+            <div>
                 <h1>Inscreva-se</h1>
-                <div id="divInscricao">
-                    <label for="">
-                        <input type="text" placeholder="Nome Completo" class="campoInscricao">
-                    </label>
-                    <label for="">
-                        <input type="text" placeholder="Email" class="campoInscricao">
-                    </label>
-                    <label for="">
-                        <input type="text" placeholder="CPF" class="campoInscricao">
-                    </label>
-                    <label for="">
-                        <input type="text" placeholder="Telefone" class="campoInscricao">
-                    </label>
-                    <label for="">
-                        <input type="text" placeholder="Endereço" class="campoInscricao">
-                    </label>
-                    <label for="">
-                        <input type="text" placeholder="Cidade" class="campoInscricao">
-                    </label>
-                    <div id="caixaMaior">
-                        <div>
-                            <label for="">
-                                <input type="file" placeholder="campo de arquvio de identidade" class="campoDeArquivo">
-                            </label>
+                <form action="" class="form">
+                        <fieldset>
+                            <label for=""></label>
+                            <input type="text" placeholder="Nome Completo" class="campoInscricao" id="nome">
+                        </fieldset>
+                        <fieldset>
+                            <label for=""></label>
+                            <input type="text" placeholder="Email" class="campoInscricao" id="email">
+                        </fieldset>
+                        <fieldset>
+                            <label for=""></label>
+                            <input type="text" placeholder="CPF" class="campoInscricao" id="cpf">
+                        </fieldset>
+                        <fieldset>
+                            <label for=""></label>
+                            <input type="text" placeholder="Telefone" class="campoInscricao" id="telefone">
+                        </fieldset>
+                        <fieldset>
+                            <label for=""></label>
+                            <input type="text" placeholder="Endereço" class="campoInscricao" id="endereco">
+                        </fieldset>
+                        <fieldset>
+                            <label for=""></label>
+                            <input type="text" placeholder="Cidade" class="campoInscricao" id="cidade">
+                        </fieldset>
+                        <div class="caixaMaior">
+                            <div>
+                                <label for="">Docuemento de identidade</label>
+                                <fieldset class="camposDedocumento">
+                                    <img src="img/Vector.svg" alt="">
+                                    <p>Selecione arquivo <br> ou arraste pra cá <br>
+                                        JPG, PNG ou PDF</p>
+                                    <button type="submit" class="button">Selecionar</button>
+                                </fieldset>
+                            </div>
+                            <div>
+                                <label for="">Comprovante de residência</label>
+                                <fieldset class="camposDedocumento">
+                                    <img src="img/Vector.svg" alt="">
+                                    <p>Selecione arquivo <br> ou arraste pra cá <br>
+                                        JPG, PNG ou PDF</p>
+                                    <button type="submit" class="button">Selecionar</button>
+                                </fieldset>
+                            </div>
                         </div>
-                        <div>
-                            <label for="">
-                                <input type="file" placeholder="campo de arquivo de comprovante de residencia" class="campoDeArquivo">
-                            </label>                         
-                        </div>
-                        <p>*Atenção:todos os dados acima são obrigatórios</p>   
-                    </div>      
-                </div>
-                <button id="butaopSalvar">Entrar</button>
-                <button id="butaoCancelar">Sair</button>
-            </form>
-           
+                    <p>*Atenção:todos os dados acima são obrigatórios</p>
+                    <div class="caixaMaior">
+                        <button type="submit" class="btn" id="butaoCancelar">Cancelar</button>
+                        <button type="submit" class="btn" id="butaoSalvar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="section-img">
+            <img src="img/Grupo 5.svg" alt="">
+        </section>
     </main>
 </body>
 </html>
